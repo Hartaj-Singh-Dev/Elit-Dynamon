@@ -1,0 +1,5 @@
+elit-dynamon-client/node_modules
+elit-dynamon-backend/node_modules
+elit-dynamon-backend/config.env
+elit-dynamon-client/public/favicon.ico
+elit-dynamon-client/public/vercel.svg

@@ -1,0 +1,23 @@
+{
+  "name": "elite-dynamon-backend",
+  "version": "1.0.0",
+  "description": "This will be backend of my startup , hope so it will go good ,  This backend has all the api's",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NODE",
+    "js",
+    "EXPRESS",
+    "js"
+  ],
+  "author": "Team Elite Dynamon",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^5.13.2"
+  }
+}
