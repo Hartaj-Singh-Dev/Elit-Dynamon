@@ -1,30 +1,57 @@
-// main.homePageBG {
-//   // Main background
-//   background-color: #b7e2ff;
-//   width: 100vw;
-//   min-height: 100vh;
-//   // Main background
+$main-color:	#368fd8;
+$secondary-color: #2d1f93;
+$bg-color: #414141;
+$tertiary-color: #2e2e2e;
+$dark-bg-color: #1b1b1b;
+$white-bg-color:#fcfcfc;
+$main-color-2:#21D1FF;
+$secondary-color:#5451D6;
 
-//   section {
-//     width: 100vw;
-//     height: 100vh;
-//   }
 
-//   // sideNavbar
 
-//   section div.sideNavbar {
-//     position: sticky;
-//     height: 100%;
-//     width: 20%;
-//     background: rgba( 255, 255, 255, 0.10 );
-//     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-//     backdrop-filter: blur( 20.0px );
-//     -webkit-backdrop-filter: blur( 20.0px );
-//     border: 0.5px solid rgba( 255, 255, 255, 0.18 );
-//     border-top-right-radius: 10%;
-//     border-bottom-right-radius: 10%;
-//   }
-//   //sidebar
+  main.homePage {
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 86%;
+    margin: 0 0 0 14%;
 
+    section.homePageContent{
+      div.home{
+        height: 100vh;
+      }
+
+      footer{
+
+        height: 8rem;
+      }
+
+
+    }
+
+    // sidebar
+  }
+
+
+
+// Media Queries
+@media only screen and (max-width: 700px) {
+ 
+  main.homePage{
+    display: flex;
+    flex-direction: column;
+    margin: 9.5% 0 0 0 ;
+    section.homePageContent{
+      min-height: 100vh;
+       width: 100%;
+ 
+       div.home{
+         height: 100vh;
+         z-index: -1;
+         width: 100vw;
+       }
+     }
+  }
   
-// }
+}
+
+// Media Queries
