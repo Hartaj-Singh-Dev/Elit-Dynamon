@@ -5,7 +5,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Image from "next/image";
 import SearchIcon from '@material-ui/icons/Search';
 import { useState } from "react";
-import { SyncTwoTone } from "@material-ui/icons";
 
 
 const Navbar = () => {
