@@ -14,15 +14,6 @@ export default function Home() {
       <Navbar/>
           <main className={styles.homePage}>
             <section className={styles.homePageContent}>
-              <div className={styles.home}>
-                hello
-              </div>
-              <div className={styles.home}>
-                hello world
-              </div>
-              <footer>
-                hello world
-              </footer>
             </section>
           </main>
     </>

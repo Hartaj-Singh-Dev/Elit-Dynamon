@@ -13,10 +13,10 @@ $text-color:#20c0ff;
 nav.sideNavbar {
   position: fixed;
   z-index: 200;
-  min-height: 2rem;
+  min-height: 1.8rem;
   overflow: hidden;
   height: 100%;
-  width: 13%;
+  width: 12%;
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -57,16 +57,16 @@ nav.sideNavbar {
         padding: 0.7rem 0 ;
          h3{
            cursor: pointer;
-           color:$main-color;
            font-size: 1rem;
            font-family: "Poppins";
+           color: #20c0ff;
            font-weight: 600;
          }         
       }
       div.siteRoutes:hover{
         border: 2.6px dashed #74d8ff;
         h2{
-          color: #20c0fff1;
+          color: #3cbef170;
         }
       }
     }
@@ -74,9 +74,6 @@ nav.sideNavbar {
     div.mobileNavbarDesign{
       display: flex;
       flex-direction: column;
-      div.search{
-     display: none;
-      }
       div.expandDown{
         visibility: hidden;
         .expandContract{
@@ -85,17 +82,32 @@ nav.sideNavbar {
       }
     }
 
+    div.search{
+      display: none;
+      input.articleSearchELIT{
+        border: 0;
+     outline-width: 0;
+     border: 0.4px dashed #04b6fc;
+     background-color: transparent;
+      }
+      .searchIcon{
+        font-size:large;
+        color: #20c0ff;
+      }
+
+    }
+
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
   nav.sideNavbar {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 8%;
+    height: 6.6%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -111,7 +123,7 @@ nav.sideNavbar {
       flex-direction: column;
       align-items: center;
   
-      justify-content: end;
+      justify-content: space-between;
 
       div.mobileNavbarDesign{
 
@@ -121,9 +133,7 @@ nav.sideNavbar {
         align-items: center;
         justify-content: space-around;
         align-content: center;
-        div.search{
-       display: flex;
-        }
+        
         div.expandDown{
           visibility: visible;
         }
@@ -132,11 +142,27 @@ nav.sideNavbar {
           margin-bottom: 0;
           cursor: pointer;
           img{
-            height: 2rem;
-            width: 6rem;
+            height: 1.6rem;
+            width: 5rem;
           }
         }
       }
+
+      div.search{
+        display: flex;
+        form{
+          display: flex;
+
+          input.articleSearchELIT{
+            color:rgb(197, 197, 197);
+            padding: 0 6px;
+            caret-color: #20c0ff;
+          }
+          input.articleSearchELIT::placeholder{
+            color: #20c0ff;
+          }
+        }
+        }
       
       div.allLinks{
         display: flex;
