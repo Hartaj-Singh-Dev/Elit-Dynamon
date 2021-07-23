@@ -3,7 +3,9 @@ import Link from "next/link";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 import Image from "next/image";
+import SearchIcon from '@material-ui/icons/Search';
 import { useState } from "react";
+import { SyncTwoTone } from "@material-ui/icons";
 
 
 const Navbar = () => {
@@ -15,17 +17,22 @@ const Navbar = () => {
       setisExpaned(true)
       }else{
       setisExpaned(false)
-      document.getElementById("navbar").style.height = "8%"
+      document.getElementById("navbar").style.height = "6.6%"
       document.getElementById("navbarContent").style.height = "39%"
       document.getElementById("buttonToexpandAndContract").style.transform = "rotate(0deg)"
       }
   }
 
   if(isExpaned){
-    document.getElementById("navbar").style.height = "40%"
-    document.getElementById("navbarContent").style.height = "80%"
+    document.getElementById("navbar").style.height = "37%"
+    document.getElementById("navbarContent").style.height = "95%"
     document.getElementById("buttonToexpandAndContract").style.transform = "rotate(180deg)"
   }
+
+  const searchingArticle = ()=>{
+    console.log("get the fuck out ")
+  }
+
 
   return (
     <>
@@ -42,15 +49,20 @@ const Navbar = () => {
                 />
               </Link>
             </div>
-            <div className={navStyle.search}>
-              <input type="text" />
-            </div>
             <div className={navStyle.expandDown}>
+              
               <IconButton onClick={()=>{expandDownAndUp()}}>
                 <ExpandMoreIcon id="buttonToexpandAndContract" className={navStyle.expandContract} />
               </IconButton>
             </div>
           </div>
+
+          <div className={navStyle.search}>
+            <form action="">
+              <input type="text"  className={navStyle.articleSearchELIT}  placeholder="Search Error"/>
+                 <IconButton ><SearchIcon className={navStyle.searchIcon}></SearchIcon></IconButton>
+            </form>
+            </div>
 
           <div className={navStyle.allLinks}>
             <div className={navStyle.siteRoutes}>
