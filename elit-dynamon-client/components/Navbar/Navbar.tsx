@@ -62,7 +62,7 @@ const Navbar = (props) => {
                 <Image
                   height={45}
                   width={100}
-                  src="/Elit Dynamon-SVG.svg"
+                  src="/Elit-Dynamon-SVG.svg"
                   alt=""
                   loading="eager"
                 />
