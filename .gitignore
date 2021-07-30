@@ -4,3 +4,5 @@ elit-dynamon-backend/config.env
 elit-dynamon-client/public/favicon.ico
 elit-dynamon-client/public/vercel.svg
 elit-dynamon-client/pages/index.tsx
+
+elit-dynamon-client/public/Elit Dynamon-SVG.svg
