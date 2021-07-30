@@ -1,16 +1,18 @@
 import navStyle from "./navbar.module.scss";
-import Link from "next/link";
+import NavLink from "next/link";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 import Image from "next/image";
 import SearchIcon from '@material-ui/icons/Search';
 import { useState } from "react";
-import { SyncTwoTone } from "@material-ui/icons";
+import {Link} from "react-scroll"
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const [isExpaned, setisExpaned] = useState(false)
+
+  const whichActive = props.whichActive
 
   const expandDownAndUp = ()=>{
       if(!isExpaned){
@@ -33,6 +35,22 @@ const Navbar = () => {
     console.log("get the fuck out ")
   }
 
+  // switch(whichActive){
+  //    case "home":
+  //      document.getElementById("homeLink").className = "homeLink-active"
+  //      break;
+  //    case "about":
+  //      document.getElementById("aboutLink").className = "AboutLink-active"
+  //      break;
+  //    case "Articles":
+  //      document.getElementById("articlesLink").className = "ArticlesLink-active"
+  //      break;
+  //    case "contact":
+  //      document.getElementById("contactLink").className = "contactLink-active"
+  //      break;
+   
+  // }
+
 
   return (
     <>
@@ -40,14 +58,15 @@ const Navbar = () => {
         <div className={navStyle.mainContentLinks} id="navbarContent">
           <div className={navStyle.mobileNavbarDesign}>
             <div className={navStyle.logo}>
-              <Link href="/">
+              <NavLink href="/">
                 <Image
                   height={45}
                   width={100}
                   src="/Elit Dynamon-SVG.svg"
                   alt=""
+                  loading="eager"
                 />
-              </Link>
+              </NavLink>
             </div>
             <div className={navStyle.expandDown}>
               
@@ -66,24 +85,24 @@ const Navbar = () => {
 
           <div className={navStyle.allLinks}>
             <div className={navStyle.siteRoutes}>
-              <Link href="/home">
-                <h3>Home</h3>
+              <NavLink href="/">
+                <h3 id="homeLink" className={(props.whichActive == "home") ?  navStyle.activeLink : " "}>Home</h3>
+              </NavLink>
+            </div>
+            <div className={navStyle.siteRoutes}>
+              <NavLink href="/articles">
+                <h3 id="articlesLink"   className={(props.whichActive == "articles") ?  navStyle.activeLink : " "} >Articles</h3>
+              </NavLink>
+            </div>
+            <div className={navStyle.siteRoutes}>
+              <Link  activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500} >
+                <h3 id="aboutLink"   className={(props.whichActive == "about") ?  navStyle.activeLink : " "}>About us</h3>
               </Link>
             </div>
             <div className={navStyle.siteRoutes}>
-              <Link href="/blog">
-                <h3>Articles</h3>
-              </Link>
-            </div>
-            <div className={navStyle.siteRoutes}>
-              <Link href="/aboutus">
-                <h3>About us</h3>
-              </Link>
-            </div>
-            <div className={navStyle.siteRoutes}>
-              <Link href="/contactUs">
-                <h3>Contact us</h3>
-              </Link>
+              <NavLink href="/contactUs">
+                <h3 id="contactLink"   className={(props.whichActive == "contact") ?  navStyle.activeLink : " "} >Contact us</h3>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -1,0 +1,250 @@
+div.container {
+  height: 100%;
+  position:relative;
+  width: 100%;
+  padding: 1.7rem 0 0 0;
+
+  header {
+    input {
+      
+      border: none;
+      caret-color: #20c0ff;
+      padding: 0 0 0 5px ;
+      outline-width: 0;
+      -moz-outline-width:0;
+      font-size: 1rem;
+      width: 15rem;
+      font-weight: 560;
+      margin-left: 1rem;
+      margin-top: 0rem;
+      font-family: "Space Mono";
+      border-bottom: 2.8px solid #20c0ff;
+      background: transparent;
+      color: #ffffff;
+    }
+    input::placeholder{
+	    color: #ffffff;
+    }
+
+  }
+
+  div.mainCenterData {
+    position: absolute;
+    top: 21%;
+    left: 5%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 25%;
+    width: 80%;
+
+    div.wordMark {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      
+      justify-content: space-evenly;
+      h1.textELIT {
+        font-size: 4.5rem;
+        font-family: "Inter";
+        font-weight: 730;
+        // text-decoration-line: underline;
+        // text-decoration-style: wavy;
+        // text-decoration-color: #5451d6;
+        letter-spacing: 3px;
+        color: #ffffff;
+      }
+      h1.textDYNAMON {
+        font-size: 4.8rem;
+        font-family: "Inter";
+        font-weight: 730;
+        letter-spacing: 4px;
+        color: #ffffff;
+        // 	-webkit-text-stroke-width:0.4px;
+        //        -webkit-text-stroke-color: #ffffff;
+      }
+    }
+    div.sloganMark{
+      h2.sloganText{
+        font-size: 1.8rem;
+        font-family: "Space Mono";
+        margin-top: 10px;
+        letter-spacing: 2px;
+        font-weight: 570;
+        background: linear-gradient(90deg,#21D1FF,#5451D6);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+  }
+
+  div.socialMediaPresence{
+    position: fixed;
+    right: 4.3%;
+    top: 22.5%;
+    height: 75%;
+    width: 5%;
+
+    div.iconsLinks{
+      width: 100%;
+
+      div.icon{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        color: #ffff;
+        a{
+          color: #ffffff;
+        }
+        a:hover{
+          color: #ffffff94;
+        }
+      }
+    }
+    div.line{
+      display: flex;
+      justify-content: center;
+      height: 50%;
+      div.Line{
+        width: 4px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  div.someButtons{
+    position: absolute;
+    bottom: 25%;
+    left: 34%;
+    button{
+      height: 3rem;
+      width: 16rem;
+      cursor: pointer;
+      border: none;
+      word-break: initial;
+      outline-width: 0;
+      padding: 0.2em 0.1em;
+      border-radius: 24px;
+      background-color: #ffffff;
+      color: #ffffff;
+      font-family: "Poppins";
+      font-weight: 650;
+      font-size: 0.85rem;
+      background: transparent;
+      border: 2px solid #ffff;
+      transition: all 0.1s;
+    }
+    button:active{
+      background: #ffffff;
+      color: rgb(5, 5, 5);
+    }
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  div.container {
+    height: 100vh;
+    position:relative;
+    width: 100%;
+    padding: 0rem 0 0 0;
+  
+    header {
+      input {
+        display: none;
+     }
+    }
+    div.mainCenterData {
+      position: absolute;
+      top: 7%;
+      left: 0%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 36%;
+      width: 100%;
+  
+      div.wordMark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 87%;
+        justify-content: space-evenly;
+        h1.textELIT {
+          font-size: 3.6rem;
+          font-family: "Inter";
+          font-weight: 700;
+          // text-decoration-line: underline;
+          // text-decoration-style: wavy;
+          // text-decoration-color: #5451d6;
+          letter-spacing: 3px;
+          color: #ffffff;
+          align-self: flex-start;
+        }
+        h1.textDYNAMON {
+          font-size: 3.3rem;
+          font-family: "Inter";
+          font-weight: 690;
+          align-self: flex-end;
+          letter-spacing: 4px;
+          color: #ffffff;
+          // 	-webkit-text-stroke-width:0.4px;
+          //        -webkit-text-stroke-color: #ffffff;
+        }
+      }
+      div.sloganMark{
+        h2.sloganText{
+          font-size: 1.2rem;
+          font-family: "Space Mono";
+          margin-top: 15px;
+          letter-spacing: 0px;
+          font-weight: 590;
+          background: linear-gradient(90deg,#21D1FF,#5451D6);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+  
+    }
+  
+    div.socialMediaPresence{
+      display: none; 
+    }
+  
+    div.someButtons{
+      // position: initial;
+      // bottom: 0%;
+      // left: 0%;
+      transform: translate(-25% , 10px);
+      button{
+        height: 3rem;
+        width: 16rem;
+        cursor: pointer;
+        border: none;
+        word-break: initial;
+        outline-width: 0;
+        padding: 0.2em 0.1em;
+        border-radius: 24px;
+        background-color: #ffffff;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 650;
+        font-size: 0.85rem;
+        background: transparent;
+        border: 2px solid #ffff;
+        transition: all 0.1s;
+      }
+      button:active{
+        background: #ffffff;
+        color: rgb(5, 5, 5);
+      }
+    }
+  
+  }
+}
