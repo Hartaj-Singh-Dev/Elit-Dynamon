@@ -25,7 +25,7 @@ export default function Home() {
               </Element>
             </section>
           </main>
-          <footer>
+          <footer className={styles.footer}>
             <Footer/>
           </footer>
     </>

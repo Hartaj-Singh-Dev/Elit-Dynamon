@@ -35,23 +35,6 @@ const Navbar = (props) => {
     console.log("get the fuck out ")
   }
 
-  // switch(whichActive){
-  //    case "home":
-  //      document.getElementById("homeLink").className = "homeLink-active"
-  //      break;
-  //    case "about":
-  //      document.getElementById("aboutLink").className = "AboutLink-active"
-  //      break;
-  //    case "Articles":
-  //      document.getElementById("articlesLink").className = "ArticlesLink-active"
-  //      break;
-  //    case "contact":
-  //      document.getElementById("contactLink").className = "contactLink-active"
-  //      break;
-   
-  // }
-
-
   return (
     <>
       <nav className={navStyle.sideNavbar} id="navbar">
