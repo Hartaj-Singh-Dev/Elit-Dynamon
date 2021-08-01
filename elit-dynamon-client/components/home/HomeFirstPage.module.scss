@@ -2,6 +2,7 @@ div.container {
   height: 100%;
   position:relative;
   width: 100%;
+  overflow: hidden;
   padding: 1.7rem 0 0 0;
 
   header {
@@ -44,8 +45,18 @@ div.container {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      
+      overflow: hidden;
       justify-content: space-evenly;
+
+
+      @keyframes getUpText {
+        from{
+          transform: translate(0 , 5rem);
+        }
+        to{
+          transform: translate(0, 0rem);
+        }
+      }
       h1.textELIT {
         font-size: 4.5rem;
         font-family: "Inter";
@@ -54,12 +65,17 @@ div.container {
         // text-decoration-style: wavy;
         // text-decoration-color: #5451d6;
         letter-spacing: 3px;
+          animation-name: getUpText;
+          animation-duration: 0.6s;
         color: #ffffff;
       }
       h1.textDYNAMON {
         font-size: 4.8rem;
         font-family: "Inter";
         font-weight: 730;
+        
+          animation-name: getUpText;
+          animation-duration: 0.6s;
         letter-spacing: 4px;
         color: #ffffff;
         // 	-webkit-text-stroke-width:0.4px;
@@ -68,11 +84,12 @@ div.container {
     }
     div.sloganMark{
       h2.sloganText{
-        font-size: 1.8rem;
-        font-family: "Space Mono";
+        font-size: 1rem;
+        // font-family: "Space Mono";
+        font-family: "Press Start 2P";
         margin-top: 10px;
-        letter-spacing: 2px;
-        font-weight: 570;
+        letter-spacing: 0px;
+        font-weight: 500;
         background: linear-gradient(90deg,#21D1FF,#5451D6);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -81,11 +98,22 @@ div.container {
 
   }
 
+  @keyframes getInsideLinks {
+    from{
+      transform: translateX(6rem);
+    }
+    to{
+      transform: translateX(0rem);
+    }
+  }
+
   div.socialMediaPresence{
-    position: fixed;
+    position: absolute;
     right: 4.3%;
-    top: 22.5%;
-    height: 75%;
+    top: 21%;
+    height: 60%;
+    animation-name: getInsideLinks;
+    animation-duration: 0.7s;
     width: 5%;
 
     div.iconsLinks{
@@ -107,7 +135,7 @@ div.container {
     div.line{
       display: flex;
       justify-content: center;
-      height: 50%;
+      height: 40%;
       div.Line{
         width: 4px;
         height: 100%;
@@ -174,6 +202,7 @@ div.container {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        overflow: hidden;
         width: 87%;
         justify-content: space-evenly;
         h1.textELIT {
@@ -185,6 +214,7 @@ div.container {
           // text-decoration-color: #5451d6;
           letter-spacing: 3px;
           color: #ffffff;
+          
           align-self: flex-start;
         }
         h1.textDYNAMON {
@@ -200,11 +230,10 @@ div.container {
       }
       div.sloganMark{
         h2.sloganText{
-          font-size: 1.2rem;
-          font-family: "Space Mono";
+          font-size: 0.9rem;
           margin-top: 15px;
           letter-spacing: 0px;
-          font-weight: 590;
+          font-weight: 500;
           background: linear-gradient(90deg,#21D1FF,#5451D6);
           background-clip: text;
           -webkit-text-fill-color: transparent;

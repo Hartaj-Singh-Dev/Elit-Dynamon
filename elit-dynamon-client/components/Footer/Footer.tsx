@@ -1,10 +1,11 @@
-import footStyle form "./footer.module.scss";
-
+import footStyle from "./footer.module.scss";
 const footer = () => {
 	return (
-		<div>
-			
+		<>
+		<div className={footStyle.footerData}>
+			<h1>Hello GUys</h1>
 		</div>
+		</>
 	)
 }
 

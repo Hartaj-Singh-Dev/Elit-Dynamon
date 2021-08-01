@@ -9,6 +9,8 @@ import { faDiscord } from  "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HomeFirstPage = () => {
+
+
 	return (
 		<>
 		<div className={homeStyle.container}>

@@ -19,7 +19,7 @@ const Navbar = (props) => {
       setisExpaned(true)
       }else{
       setisExpaned(false)
-      document.getElementById("navbar").style.height = "6.6%"
+      document.getElementById("navbar").style.height = "6.4%"
       document.getElementById("navbarContent").style.height = "39%"
       document.getElementById("buttonToexpandAndContract").style.transform = "rotate(0deg)"
       }

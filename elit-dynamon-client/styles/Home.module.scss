@@ -19,8 +19,11 @@ $secondary-color:#5451D6;
      }
 
      section.aboutPageContent{
-       height: 100vh;
+       min-height: 70vh;
        width: 100%;
+       div.aboutSection{
+         height: 70vh;
+       }
      }
   }
 
@@ -40,7 +43,7 @@ $secondary-color:#5451D6;
      }
 
      section.aboutPageContent{
-       height: 100vh;
+       min-height: 70vh;
        width: 100%;
      }
 
