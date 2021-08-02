@@ -125,27 +125,32 @@ div.footerData {
     background-color: #313131;
     div.upperFooter {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
       height: 90%;
       div.logoAndNewsLetter {
-        height: 35%;
+        height: 41%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         div.logoAndInput {
           height: 100%;
-          width: 80%;
+          width: 95%;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: space-around;
           div.subscribeLetter {
             display: flex;
             flex-direction: column;
-            height: 85%;
+            height: 100%;
+	    width: 55%;
             justify-content: space-evenly;
             h1 {
               color: #21d1ff;
-              font-size: 1.2rem;
+              font-size: 1rem;
               font-family: "Poppins";
             }
             form {
@@ -170,7 +175,7 @@ div.footerData {
                 color: #21d1ff;
                 outline-width: 0;
                 cursor: pointer;
-                margin: 0 0 0 8px;
+                margin: 8px 0 0 8px;
                 font-family: "Poppins";
                 font-weight: 600;
                 font-size: 1rem;
@@ -186,14 +191,14 @@ div.footerData {
         }
       }
       div.companyServices {
-        height: 55%;
+        height: 45%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
         div.servicesLists {
-          width: 60%;
+          width: 85%;
           height: 100%;
           display: flex;
           align-items: center;
