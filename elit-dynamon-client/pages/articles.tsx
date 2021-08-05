@@ -1,11 +1,9 @@
-import Navbar from "../components/Navbar/Navbar"
+import ArticlesNavbar from "../components/Navbar/ArticlesNavbar";
 
 const Articles = () => {
-
-	document.addEventListener('contextmenu', event => event.preventDefault());
 	return (
 		<>
-		<Navbar whichActive="articles"/>	
+			<ArticlesNavbar whichActive="articles"/>
 		</>
 	)
 }
