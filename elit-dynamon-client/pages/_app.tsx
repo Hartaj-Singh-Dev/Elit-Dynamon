@@ -1,6 +1,20 @@
 import '../styles/globals.scss'
 import React from "react";
-import router from "next/router";
+import Router from "next/router";
+import ProgressBar from "@badrap/bar-of-progress";
+
+const progress = new ProgressBar({
+  size: 3,
+  color: "#ffff",
+  className: "bar-of-progress",
+  delay: 100,
+});
+
+
+Router.events.on("routeChangeStart", progress.start);
+Router.events.on("routeChangeComplete", progress.finish);
+Router.events.on("routeChangeError", progress.finish);
+
 
 function MyApp({ Component, pageProps }) {
 
