@@ -18,7 +18,7 @@ const ArticlesNavbar = (props) => {
       setisExpaned(true)
       }else{
       setisExpaned(false)
-      document.getElementById("navbar").style.height = "5%"
+      document.getElementById("navbar").style.height = "7%"
       document.getElementById("navbarContent").style.height = "39%"
       document.getElementById("buttonToexpandAndContract").style.transform = "rotate(0deg)"
       }
@@ -26,7 +26,7 @@ const ArticlesNavbar = (props) => {
 
   if(isExpaned){
     document.getElementById("navbar").style.height = "37%"
-    document.getElementById("navbarContent").style.height = "95%"
+    document.getElementById("navbarContent").style.height = "99%"
     document.getElementById("buttonToexpandAndContract").style.transform = "rotate(180deg)"
   }
 
@@ -42,8 +42,8 @@ const ArticlesNavbar = (props) => {
             <div className={navStyle.logo}>
               <NavLink href="/">
                 <Image
-                  height={45}
-                  width={100}
+                  height={28}
+                  width={90}
                   src="/Elit-Dynamon-SVG.svg"
                   alt=""
                   loading="eager"

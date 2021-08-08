@@ -12,7 +12,7 @@ $text-color:#20c0ff;
 nav.sideNavbar {
   z-index: 200;
   overflow: hidden;
-  height: 3.5rem;
+  height: 3rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ nav.sideNavbar {
   // border: 0.5px solid rgba(255, 255, 255, 0.18);
 
   div.mainContentLinks {
-    width: 70%;
+    width: 60%;
     margin: 0rem 0 0 0;
     display: flex;
     align-items: center;
@@ -41,10 +41,10 @@ nav.sideNavbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 55%;
+      height: 100%;
       width: 100%;
       div.siteRoutes{
-        width: 90%;
+        width: 20%;
         height: 1.5rem;
         display: flex;
         align-items: center;
@@ -71,7 +71,7 @@ nav.sideNavbar {
 
     div.mobileNavbarDesign{
       display: flex;
-      width: 50%;
+      width: 60%;
       flex-direction: column;
       div.expandDown{
         display: none;
@@ -101,19 +101,20 @@ nav.sideNavbar {
 
 @media only screen and (max-width: 770px) {
   nav.sideNavbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     z-index: 100;
     width: 100%;
     height: 6.5%;
-    min-height: 6%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: all 0.2s;
+    background-color: #272727;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 
     div.mainContentLinks {
       width: 95%;
@@ -135,7 +136,7 @@ nav.sideNavbar {
         align-content: center;
         
         div.expandDown{
-          visibility: visible;
+          display: block;
         }
 
         div.logo {
