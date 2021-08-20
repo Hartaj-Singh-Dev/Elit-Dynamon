@@ -11,8 +11,8 @@ const footer = () => {
               <div className={footStyle.logo}>
                 <Image
                   src="/Elit-Dynamon-SVG.svg"
-                  height={40}
-                  width={90}
+                  height={50}
+                  width={100}
                   loading="lazy"
                 />
               </div>

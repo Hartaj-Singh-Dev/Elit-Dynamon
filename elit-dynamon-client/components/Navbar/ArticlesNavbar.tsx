@@ -1,4 +1,3 @@
-
 import navStyle from "./articlesNavbar.module.scss";
 import NavLink from "next/link";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -13,20 +12,20 @@ const ArticlesNavbar = (props) => {
 
   const [isExpaned, setisExpaned] = useState(false)
 
-  const expandDownAndUp = ()=>{
+  const expandUpAndDown = ()=>{
       if(!isExpaned){
       setisExpaned(true)
       }else{
       setisExpaned(false)
-      document.getElementById("navbar").style.height = "7%"
+      document.getElementById("navbar").style.height = "3rem"
       document.getElementById("navbarContent").style.height = "39%"
       document.getElementById("buttonToexpandAndContract").style.transform = "rotate(0deg)"
       }
   }
 
   if(isExpaned){
-    document.getElementById("navbar").style.height = "37%"
-    document.getElementById("navbarContent").style.height = "99%"
+    document.getElementById("navbar").style.height = "14rem"
+    document.getElementById("navbarContent").style.height = "95%"
     document.getElementById("buttonToexpandAndContract").style.transform = "rotate(180deg)"
   }
 
@@ -36,52 +35,52 @@ const ArticlesNavbar = (props) => {
 
   return (
     <>
-      <nav className={navStyle.sideNavbar} id="navbar">
-        <div className={navStyle.mainContentLinks} id="navbarContent">
+      <nav className={navStyle.TopNavbar} id="navbar">
+        <div className={navStyle.mainContentlinks} id="navbarContent">
           <div className={navStyle.mobileNavbarDesign}>
-            <div className={navStyle.logo}>
+            <div className={navStyle.Logo}>
               <NavLink href="/">
                 <Image
-                  height={28}
-                  width={90}
+                  height={45}
+                  width={100}
                   src="/Elit-Dynamon-SVG.svg"
                   alt=""
                   loading="eager"
                 />
               </NavLink>
             </div>
-            <div className={navStyle.expandDown}>
+            <div className={navStyle.ExpandDown}>
               
-              <IconButton onClick={()=>{expandDownAndUp()}}>
-                <ExpandMoreIcon id="buttonToexpandAndContract" className={navStyle.expandContract} />
+              <IconButton onClick={()=>{expandUpAndDown()}}>
+                <ExpandMoreIcon id="buttonToexpandAndContract" className={navStyle.ExpandContract} />
               </IconButton>
             </div>
           </div>
 
-          <div className={navStyle.search}>
+          <div className={navStyle.Search}>
             <form action="">
-              <input type="text"  className={navStyle.articleSearchELIT}  placeholder="Search Error"/>
-                 <IconButton ><SearchIcon className={navStyle.searchIcon}></SearchIcon></IconButton>
+              <input type="text"  className={navStyle.articleSearch}  placeholder="Search Error"/>
+                 <IconButton ><SearchIcon className={navStyle.searcHIcon}></SearchIcon></IconButton>
             </form>
             </div>
 
-          <div className={navStyle.allLinks}>
-            <div className={navStyle.siteRoutes}>
+          <div className={navStyle.alllinks}>
+            <div className={navStyle.siteroutes}>
               <NavLink href="/">
                 <h3 id="homeLink" className={(props.whichActive == "home") ?  navStyle.activeLink : " "}>Home</h3>
               </NavLink>
             </div>
-            <div className={navStyle.siteRoutes}>
+            <div className={navStyle.siteroutes}>
               <NavLink href="/articles">
                 <h3 id="articlesLink"   className={(props.whichActive == "articles") ?  navStyle.activeLink : " "} >Articles</h3>
               </NavLink>
             </div>
-            <div className={navStyle.siteRoutes}>
+            <div className={navStyle.siteroutes}>
               <Link  activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500} >
                 <h3 id="aboutLink"   className={(props.whichActive == "about") ?  navStyle.activeLink : " "}>About us</h3>
               </Link>
             </div>
-            <div className={navStyle.siteRoutes}>
+            <div className={navStyle.siteroutes}>
               <NavLink href="/contactUs">
                 <h3 id="contactLink"   className={(props.whichActive == "contact") ?  navStyle.activeLink : " "} >Contact us</h3>
               </NavLink>

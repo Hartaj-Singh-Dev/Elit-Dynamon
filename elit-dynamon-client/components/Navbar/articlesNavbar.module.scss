@@ -1,3 +1,4 @@
+// sideBar
 $main-color: #338bd5;
 $secondary-color: #2d1f93;
 $tertiary-color: #e9e9e9;
@@ -9,14 +10,14 @@ $text-color:#20c0ff;
 
 
 
-nav.sideNavbar {
-  z-index: 200;
+nav.TopNavbar {
+  min-height: 1.8rem;
   overflow: hidden;
-  height: 3rem;
+  height: 2.5rem;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition: all 0.1s;
   background-color: rgba(255,255 ,255 ,0.05);
   // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -24,27 +25,27 @@ nav.sideNavbar {
   -webkit-backdrop-filter: blur(10px);
   // border: 0.5px solid rgba(255, 255, 255, 0.18);
 
-  div.mainContentLinks {
-    width: 60%;
+  div.mainContentlinks {
+    width: 80%;
     margin: 0rem 0 0 0;
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 2rem;
 
     justify-content: space-between;
 
-    div.logo {
+    div.Logo {
       margin-bottom: auto;
       cursor: pointer;
     }
-    div.allLinks{
+    div.alllinks{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 100%;
+      height: 55%;
       width: 100%;
-      div.siteRoutes{
-        width: 20%;
+      div.siteroutes{
+        width: 90%;
         height: 1.5rem;
         display: flex;
         align-items: center;
@@ -61,7 +62,7 @@ nav.sideNavbar {
            color: #04b6fc;
          }
       }
-      div.siteRoutes:hover{
+      div.siteroutes:hover{
         border: 2.6px dashed #74d8ff;
         h3{
           color: #3cbef170;
@@ -69,27 +70,26 @@ nav.sideNavbar {
       }
     }
 
-    div.mobileNavbarDesign{
+    div.MobileNavbarDesign{
       display: flex;
-      width: 60%;
       flex-direction: column;
-      div.expandDown{
-        display: none;
-        .expandContract{
+      div.ExpandDown{
+        visibility: hidden;
+        .ExpandContract{
           color: #20c0ff;
         }
       }
     }
 
-    div.search{
+    div.Search{
       display: none;
-      input.articleSearchELIT{
+      input.articleSearch{
         border: 0;
      outline-width: 0;
      border: 0.6px dashed #f5f5f5;
      background-color: transparent;
       }
-      .searchIcon{
+      .searcHIcon{
         font-size:large;
         color: #20c0ff;
       }
@@ -100,23 +100,20 @@ nav.sideNavbar {
 }
 
 @media only screen and (max-width: 770px) {
-  nav.sideNavbar {
+  nav.TopNavbar {
     // position: fixed;
-    // top: 0;
-    // left: 0;
-    z-index: 100;
     width: 100%;
-    height: 6.5%;
+    height: 3rem;
+    min-height: 3%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: all 0.2s;
-    background-color: #272727;
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 
-    div.mainContentLinks {
+    div.mainContentlinks {
       width: 95%;
       height: 39%;
       display: flex;
@@ -135,11 +132,14 @@ nav.sideNavbar {
         justify-content: space-around;
         align-content: center;
         
-        div.expandDown{
-          display: block;
+        div.ExpandDown{
+          visibility: visible;
+          .ExpandContract{
+            color: #20c0ff;
+          }
         }
 
-        div.logo {
+        div.Logo {
           margin-bottom: 0;
           cursor: pointer;
           img{
@@ -149,30 +149,32 @@ nav.sideNavbar {
         }
       }
 
-      div.search{
+      div.Search{
         display: flex;
         form{
           display: flex;
 
-          input.articleSearchELIT{
+          input.articleSearch{
             color:rgb(197, 197, 197);
             padding: 0 6px;
             caret-color: #20c0ff;
           }
-          input.articleSearchELIT::placeholder{
+          input.articleSearch::placeholder{
             color: #20c0ff;
           }
         }
-        }
+
+       
+      }
       
-      div.allLinks{
+      div.alllinks{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 55%;
         width: 80%;
-        div.siteRoutes{
+        div.siteroutes{
           width: 90%;
           height: 1.5rem;
           display: flex;
@@ -191,7 +193,7 @@ nav.sideNavbar {
             color: #04b6fc;
           }
         }
-        div.siteRoutes:hover{
+        div.siteroutes:hover{
           border: 3px dashed #04b6fc;
           h3{
             color: #20c0ff86;
