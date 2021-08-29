@@ -24,7 +24,7 @@ const ArticlesNavbar = (props) => {
   }
 
   if(isExpaned){
-    document.getElementById("navbar").style.height = "14rem"
+    document.getElementById("navbar").style.height = "16rem"
     document.getElementById("navbarContent").style.height = "95%"
     document.getElementById("buttonToexpandAndContract").style.transform = "rotate(180deg)"
   }
@@ -41,7 +41,7 @@ const ArticlesNavbar = (props) => {
             <div className={navStyle.Logo}>
               <NavLink href="/">
                 <Image
-                  height={45}
+                  height={40}
                   width={100}
                   src="/Elit-Dynamon-SVG.svg"
                   alt=""

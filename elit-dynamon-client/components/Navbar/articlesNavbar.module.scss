@@ -13,7 +13,7 @@ $text-color:#20c0ff;
 nav.TopNavbar {
   min-height: 1.8rem;
   overflow: hidden;
-  height: 2.5rem;
+  height: 3rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -26,8 +26,9 @@ nav.TopNavbar {
   // border: 0.5px solid rgba(255, 255, 255, 0.18);
 
   div.mainContentlinks {
-    width: 80%;
+    width: 60%;
     margin: 0rem 0 0 0;
+    height: 100%;
     display: flex;
     align-items: center;
     height: 2rem;
@@ -43,9 +44,9 @@ nav.TopNavbar {
       justify-content: space-between;
       align-items: center;
       height: 55%;
-      width: 100%;
+      width: 55%;
       div.siteroutes{
-        width: 90%;
+        width: 100%;
         height: 1.5rem;
         display: flex;
         align-items: center;
@@ -74,7 +75,8 @@ nav.TopNavbar {
       display: flex;
       flex-direction: column;
       div.ExpandDown{
-        visibility: hidden;
+        // visibility: hidden;
+        display: none;
         .ExpandContract{
           color: #20c0ff;
         }
