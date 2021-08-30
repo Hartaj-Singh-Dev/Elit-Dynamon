@@ -5,8 +5,12 @@ div.footerData {
   div.upperFooter {
     width: 100%;
     height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     div.logoAndNewsLetter {
-      height: 35%;
+      height: 45%;
       width: 100%;
       display: flex;
       align-items: center;
@@ -20,7 +24,7 @@ div.footerData {
         div.subscribeLetter {
           display: flex;
           flex-direction: column;
-          height: 85%;
+          height: 100%;
           justify-content: space-evenly;
           h1 {
             color: #21d1ff;
@@ -50,7 +54,7 @@ div.footerData {
               color: #21d1ff;
               outline-width: 0;
               cursor: pointer;
-              margin: 0 0 0 8px;
+              margin: 7px 0 0 8px;
               font-family: "Poppins";
               font-weight: 600;
               font-size: 1rem;
@@ -66,7 +70,7 @@ div.footerData {
       }
     }
     div.companyServices {
-      height: 55%;
+      height: 50%;
       width: 100%;
       display: flex;
       align-items: center;

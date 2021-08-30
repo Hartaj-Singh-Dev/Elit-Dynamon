@@ -37,11 +37,11 @@ const ArticlesNavbar = (props) => {
     <>
       <nav className={navStyle.TopNavbar} id="navbar">
         <div className={navStyle.mainContentlinks} id="navbarContent">
-          <div className={navStyle.mobileNavbarDesign}>
+          <div className={navStyle.MobileNavbarDesign}>
             <div className={navStyle.Logo}>
               <NavLink href="/">
                 <Image
-                  height={40}
+                  height={35}
                   width={100}
                   src="/Elit-Dynamon-SVG.svg"
                   alt=""
