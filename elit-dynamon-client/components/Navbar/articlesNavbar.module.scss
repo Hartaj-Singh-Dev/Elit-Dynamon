@@ -116,7 +116,7 @@ nav.TopNavbar {
 
     div.mainContentlinks {
       width: 95%;
-      height: 39%;
+      height: 100%;
       display: flex;
       margin: 0;
       flex-direction: column;
@@ -124,7 +124,7 @@ nav.TopNavbar {
   
       justify-content: space-between;
 
-      div.mobileNavbarDesign{
+      div.MobileNavbarDesign{
 
         display: flex;
         flex-direction: row;
@@ -135,8 +135,10 @@ nav.TopNavbar {
         
         div.ExpandDown{
           visibility: visible;
+          display: flex;
           .ExpandContract{
             color: #20c0ff;
+            
           }
         }
 

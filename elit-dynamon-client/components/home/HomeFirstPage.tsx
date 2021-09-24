@@ -21,7 +21,7 @@ const HomeFirstPage = () => {
 			</header>
 			<div className={homeStyle.mainCenterData}>
 				<div className={homeStyle.wordMark}>
-			          	<h1 className={homeStyle.textELIT}> ELIT</h1> <pre></pre>  <h1 className={homeStyle.textDYNAMON}>Dynamon</h1>
+			          	<h1 className={homeStyle.textELIT}> Elit</h1> <pre>   </pre>  <h1 className={homeStyle.textDYNAMON}>Dynamon</h1>
 				</div>
 				<div className={homeStyle.sloganMark}>
 					<h2 className={homeStyle.sloganText}>Articles for Gen Z Geeks</h2>
@@ -31,17 +31,17 @@ const HomeFirstPage = () => {
 				<div className={homeStyle.iconsLinks}>
 					<div className={homeStyle.icon}>
 						<IconButton>
-						<a href="" target="_blank"><GitHubIcon /> </a>
+						<a href="https://github.com/Elit-Dynamon" target="_blank"><GitHubIcon /> </a>
 						</IconButton>
 					</div>
 					<div className={homeStyle.icon}>
 					     <IconButton>
-						 <a href="" target="_blank"><FontAwesomeIcon icon={faDiscord}/> </a>
+						 <a href="https://discord.gg/d2X8jxyj6y" target="_blank"><FontAwesomeIcon icon={faDiscord}/> </a>
 						</IconButton>
 					</div>
 					<div className={homeStyle.icon}>
 						<IconButton>
-							<a href="" target="_blank"><InstagramIcon/> </a>
+							<a href="https://www.instagram.com/elit.dynamon/" target="_blank"><InstagramIcon/> </a>
 						</IconButton>
 					</div>
 					<div className={homeStyle.icon}>
@@ -51,7 +51,7 @@ const HomeFirstPage = () => {
 					</div>
 					<div className={homeStyle.icon}>
 						<IconButton>
-							<a href="" target="_blank"><LinkedInIcon/></a>
+							<a href="https://www.linkedin.com/company/elit-dynamon" target="_blank"><LinkedInIcon/></a>
 						</IconButton>
 					</div>
 				</div>

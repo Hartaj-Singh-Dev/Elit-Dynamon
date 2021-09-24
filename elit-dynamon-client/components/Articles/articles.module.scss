@@ -9,8 +9,8 @@ div.main{
 
 	div.searchArticles{
 		width: 100%;
-		height: 5%;
 		display: flex;
+		margin: 01% 0 0 0;
 		align-items: center;
 		justify-content: center;
 		input{
@@ -22,6 +22,7 @@ div.main{
 			outline-width: 0;
 			border: 2px solid #21D1FF;
 			width: 38%;
+			height: 2%;
 			font-weight: 599;
 			height: 1.7rem;
 		}

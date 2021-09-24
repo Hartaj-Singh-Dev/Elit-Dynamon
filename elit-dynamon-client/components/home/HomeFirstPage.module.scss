@@ -38,7 +38,7 @@ div.container {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    height: 25%;
+    height: 26%;
     width: 80%;
 
     div.wordMark {
@@ -58,7 +58,7 @@ div.container {
         }
       }
       h1.textELIT {
-        font-size: 4.5rem;
+        font-size: 4.8rem;
         font-family: "Inter";
         font-weight: 730;
         // text-decoration-line: underline;
@@ -70,9 +70,9 @@ div.container {
         color: #ffffff;
       }
       h1.textDYNAMON {
-        font-size: 4.8rem;
+        font-size: 4.6rem;
         font-family: "Inter";
-        font-weight: 730;
+        font-weight: 710;
         
           animation-name: getUpText;
           animation-duration: 0.6s;
@@ -84,7 +84,7 @@ div.container {
     }
     div.sloganMark{
       h2.sloganText{
-        font-size: 1rem;
+        font-size: 1.1rem;
         // font-family: "Space Mono";
         font-family: "Press Start 2P";
         margin-top: 10px;
